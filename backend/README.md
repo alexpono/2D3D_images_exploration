@@ -7,3 +7,7 @@ BTW, you may check your URL using the command:
 git remote -v
 origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
 origin  https://github.com/USERNAME/REPOSITORY.git (push)
+
+
+# adding fastapi
+uv add fastapi --extra standard
