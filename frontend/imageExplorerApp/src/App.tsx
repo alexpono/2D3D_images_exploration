@@ -3,13 +3,27 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import { use, Suspense } from 'react';
+
+const fetchSanity = async () => {
+  const res = await
+  fetch('http://127.0.0.1:8000/sanity/');
+  return res.json();
+}
+const dataPromise =fetchSanity();
 
 function App() {
   const [count, setCount] = useState(0)
+  const sanityValue = use(dataPromise);
 
   return (
     <>
       <section id="center">
+        <div>
+          <p>
+            Hello {sanityValue}
+          </p>
+        </div>
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
