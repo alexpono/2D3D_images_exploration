@@ -18,12 +18,37 @@ function App() {
 
   return (
     <>
+
+
+
+        <section id="center">
+          <div>
+            <p>
+              Data selection zone
+            </p>
+          </div>
+        </section>
+
+        <div className="ticks"></div>
+
+        <section id="next-steps">
+          <div id="im2D">
+              <p>
+                2D image will be here
+              </p>
+          </div>
+          <div id="im3D">
+              <p>
+                3D image will be here
+              </p>
+
+          </div>
+        </section>
+
+        <div className="ticks"></div>
+        <section id="spacer"></section>
+
       <section id="center">
-        <div>
-          <p>
-            Hello {sanityValue}
-          </p>
-        </div>
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
